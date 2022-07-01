@@ -1,3 +1,22 @@
+Skip to content
+thewhiteh4t
+/
+seeker
+Public
+Code
+Issues
+19
+Pull requests
+3
+Actions
+Projects
+Security
+Insights
+seeker/seeker.py
+@thewhiteh4t
+thewhiteh4t v1.2.7 - whatsapp redirect template added
+ 1 contributor
+Executable File  341 lines (279 sloc)  8.69 KB
 #!/usr/bin/env python3
 
 VERSION = '1.2.7'
@@ -83,22 +102,20 @@ def banner():
 		comms_url = json_data['comms']
 
 	art = r'''
-/$$$$$$$$ /$$                   /$$   /$$  /$$$$$$  /$$   /$$
-|_____ $$ |__/                  | $$  | $$ /$$$_  $$| $$  | $$
-     /$$/  /$$ /$$$$$$$         | $$  | $$| $$$$\ $$| $$  | $$
-    /$$/  | $$| $$__  $$ /$$$$$$| $$$$$$$$| $$ $$ $$| $$$$$$$$
-   /$$/   | $$| $$  \ $$|______/|_____  $$| $$\ $$$$|_____  $$
-  /$$/    | $$| $$  | $$              | $$| $$ \ $$$      | $$
- /$$$$$$$$| $$| $$  | $$              | $$|  $$$$$$/      | $$
-|________/|__/|__/  |__/              |__/ \______/       |__                                            >
+                        __
+  ______  ____   ____  |  | __  ____ _______
+ /  ___/_/ __ \_/ __ \ |  |/ /_/ __ \\_  __ \
+ \___ \ \  ___/\  ___/ |    < \  ___/ |  | \/
+/____  > \___  >\___  >|__|_ \ \___  >|__|
+     \/      \/     \/      \/     \/'''
 	print(f'{G}{art}{W}\n')
-	print(f'{G}[>] {C}Created By   : {W}ZK-404')
+	print(f'{G}[>] {C}Created By   : {W}thewhiteh4t')
 	print(f'{G} |---> {C}Twitter   : {W}{twitter_url}')
 	print(f'{G} |---> {C}Community : {W}{comms_url}')
 	print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
 
 
-def template_select(site):r
+def template_select(site):
 	print(f'{Y}[!] Select a Template :{W}\n')
 
 	with open(TEMPLATES_JSON, 'r') as templ:
@@ -208,7 +225,6 @@ def data_parser():
 		data_row.extend([var_os, var_platform, var_cores, var_ram, var_vendor, var_render, var_res, var_browser, var_ip])
 
 		print(f'''{Y}[!] Device Information :{W}
-
 {G}[+] {C}OS         : {W}{var_os}
 {G}[+] {C}Platform   : {W}{var_platform}
 {G}[+] {C}CPU Cores  : {W}{var_cores}
@@ -239,7 +255,6 @@ def data_parser():
 				data_row.extend([var_continent, var_country, var_region, var_city, var_org, var_isp])
 
 				print(f'''{Y}[!] IP Information :{W}
-
 {G}[+] {C}Continent : {W}{var_continent}
 {G}[+] {C}Country   : {W}{var_country}
 {G}[+] {C}Region    : {W}{var_region}
@@ -267,7 +282,6 @@ def data_parser():
 				data_row.extend([var_lat, var_lon, var_acc, var_alt, var_dir, var_spd])
 
 				print(f'''{Y}[!] Location Information :{W}
-
 {G}[+] {C}Latitude  : {W}{var_lat}
 {G}[+] {C}Longitude : {W}{var_lon}
 {G}[+] {C}Accuracy  : {W}{var_acc}
@@ -341,3 +355,17 @@ except KeyboardInterrupt:
 	cl_quit(SERVER_PROC)
 else:
 	repeat()
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
